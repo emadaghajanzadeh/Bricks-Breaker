@@ -201,9 +201,9 @@ public class Main extends Application {
         Scene scene = new Scene(pane , 1000 , 700);
         pane.setStyle("-fx-background-color: Darkgray;");
         startgame.setOnMouseClicked(event -> primaryStage.setScene(scene));
-         breaks[] rectangle = new breaks[50];
+         brick[] rectangle = new brick[50];
         for(int i = 0 ; i < 30 ; i++){
-            rectangle[i] = new breaks();
+            rectangle[i] = new brick();
         }
          rectangle[0].setPane(pane);
          rectangle[0].setScene(scene);
@@ -242,7 +242,7 @@ public class Main extends Application {
         emad1.drawcircle();
         emad1.setpoints();
         emad1.setRacketwidth(emad2.getRacketwidth());
-        emad1.getBreak(rectangle);
+        emad1.getbrick(rectangle);
 
         primaryStage.getIcons().add(new Image("file:bricks.png"));
 

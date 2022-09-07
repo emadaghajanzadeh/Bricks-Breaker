@@ -7,7 +7,7 @@ import javafx.scene.text.Text;
 import java.util.Random;
 
 
-public class breaks {
+public class brick {
 
 
     private Pane pane = new Pane();
@@ -86,12 +86,12 @@ public void setColor(){
         rectangle2.setFill(Color.BISQUE);
 
 }
-public void removebreak(){
+public void removebrick(){
         pane.getChildren().remove(rectangle2);
 }
 
-public boolean is_special(breaks breaks){
-        if(breaks.is_special)
+public boolean is_special(brick bricks){
+        if(bricks.is_special)
             return true;
         else
             return false;

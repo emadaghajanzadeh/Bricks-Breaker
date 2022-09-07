@@ -18,7 +18,7 @@ public class ball {
     private double[] speed = new double[2];
     private double racketx;
     private double d;
-    private breaks[] Break = new breaks[30];
+    private brick[] bricks = new brick[30];
     private int[] number = new int [30];
     private int Racketwidth=130;
     private int sumofpoints ;
@@ -44,9 +44,9 @@ public class ball {
     public Pane getPane(){
         return pane;
     }
-    void getBreak(breaks[] Break){
+    void getbrick(brick[] brick){
         for(int i = 0 ; i<30 ; i++){
-            this.Break[i] = Break[i];
+            this.bricks[i] = brick[i];
         }
     }
     private void gameover(long startTime , int sumofpoints){
@@ -136,14 +136,14 @@ public class ball {
                        if(Math.abs(circle.getLayoutX()-(ab[i][0]-500))<=25 && Math.abs((circle.getLayoutY()-10)-(ab[i][1]-500))<=15 ){
                            x[0]=ab[i][0];
                            y[0]=ab[i][1];
-                          number[i] =  Break[i].getNumber();
+                          number[i] =  bricks[i].getNumber();
                           number[i]--;
-                          Break[i].settext(number[i]);
+                           bricks[i].settext(number[i]);
                             if(number[i]==0){
-                                Break[i].removebreak();
+                                bricks[i].removebrick();
                                 ab[i][0]=-500;
-                                Break[i].closetext();
-                                if(Break[i].is_special(Break[i]))
+                                bricks[i].closetext();
+                                if(bricks[i].is_special(bricks[i]))
                                 {
                                     sumofpoints += (emad1.points());
                                     Racketwidth = emad1.WidthOfBall(130);

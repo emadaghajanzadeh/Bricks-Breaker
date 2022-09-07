@@ -22,7 +22,7 @@ This class can produce a brick and show them in the game. It contains each brick
 ## Visualization
 Here you can see some images of the game.
 
-First you will see the game menu.
+First, you will see the game menu.
 
 <img src="gameImage1.PNG" width="30%">
 
@@ -34,8 +34,7 @@ following this, after pushing the button "Start Game" the game window appears.
 
 <img src="gameImage3.PNG" width="50%">
 
-Finally, once you lost the game, this message will be shows to you and your performance would be stored in a .txt file named as result.
-
+Finally, once you lost the game, this message will be shown to you and your performance would be stored in a .txt file named as result.
 <img src="gameImage4.PNG" width="50%">
 
 

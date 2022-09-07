@@ -4,7 +4,7 @@
 This project was given during the course of advanced programming, and its aim was to implement a game, like breaks breaker to make the students understand better the concepts of **object-oriented programming**.
 My implementation consists of the following classes for which I wrote simple explanations below.
 
-##Implementation
+## Implementation
 ###### Racket
 This class is responsible for showing the rocket, preserving its location, and movements.
 

@@ -113,8 +113,8 @@ public class ball {
     }
     public void circlemotion(int[][] ab , double[] v){
             long startTime = System.nanoTime();
-            Media media = new Media(new File("06.mp3").toURI().toString());
-            Media mediabutton = new Media(new File("button6.wav").toURI().toString());
+            Media media = new Media(new File("./src/resources/gameMusic.mp3").toURI().toString());
+            Media mediabutton = new Media(new File("./src/resources/buttonSound.wav").toURI().toString());
             MediaPlayer mp = new MediaPlayer(media);
             MediaPlayer buttonsound = new MediaPlayer(mediabutton);
             mp.play();

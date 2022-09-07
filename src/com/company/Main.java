@@ -26,7 +26,7 @@ public class Main extends Application {
 
     public void start(Stage primaryStage) {
 
-        Media mediabutton = new Media(new File("button6.wav").toURI().toString());
+        Media mediabutton = new Media(new File("./src/resources/buttonSound.wav").toURI().toString());
         MediaPlayer buttonsound = new MediaPlayer(mediabutton);
 
         primaryStage.setTitle("Bricks Breaker");
@@ -244,7 +244,7 @@ public class Main extends Application {
         emad1.setRacketwidth(emad2.getRacketwidth());
         emad1.getbrick(rectangle);
 
-        primaryStage.getIcons().add(new Image("file:bricks.png"));
+        primaryStage.getIcons().add(new Image("file: ./src/resources/gameIcon.png"));
 
 
         new AnimationTimer(){

@@ -6,10 +6,10 @@ My implementation consists of the following classes for which I wrote simple exp
 
 ##Implementation
 
-###Racket
+###### Racket
 This class is responsible for showing the rocket, preserving its location, and movements.
 
-###Ball
+###### Ball
 This is the most fundamental class of the program since it controlls the ball's movements and all other actions related them, e.g., scoring and losing.
 
 
